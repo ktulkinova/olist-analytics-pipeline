@@ -2,7 +2,8 @@
 
 End-to-end pipeline on the Brazilian Olist dataset (100k orders, 2016–2018). CSV → Python ETL → PostgreSQL → SQL analytics.
 
-![ERD](docs/erd.png)
+<img width="1414" height="1262" alt="erd" src="https://github.com/user-attachments/assets/bf473a36-d6d4-4542-befe-80767381708c" />
+
 
 ## Stack
 - Python (pandas, SQLAlchemy) — ETL
