@@ -53,3 +53,13 @@ Or all at once: `make all`.
 
 ## Design note
 Dropped the FK from `products.product_category_name` to the translation table. The translation table does not cover all categories in the raw data.
+
+## Orchestration (Airflow + Docker)
+Airflow runs in Docker. A DAG `olist_etl` schedules the pipeline:
+- `truncate_tables` — clears all tables
+- `check_count` — verifies row count in orders
+
+Schedule: `@daily`. See `airflow/dags/olist_etl_dag.py`.
+
+<img width="1280" height="828" alt="airflow_dag" src="https://github.com/user-attachments/assets/a550de66-cefc-4206-a7e5-47de626074fc" />
+
