@@ -63,3 +63,5 @@ Schedule: `@daily`. See `airflow/dags/olist_etl_dag.py`.
 
 <img width="1280" height="828" alt="airflow_dag" src="https://github.com/user-attachments/assets/a550de66-cefc-4206-a7e5-47de626074fc" />
 
+
+
